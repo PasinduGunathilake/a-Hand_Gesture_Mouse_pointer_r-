@@ -54,9 +54,7 @@ This project allows you to control your mouse pointer using hand gestures, utili
 - Make sure your webcam is connected and accessible.
 - For best results, use the application in a well-lit environment.
 
-## License
 
-This project is licensed under the MIT License.
 
 ## Acknowledgments
 
