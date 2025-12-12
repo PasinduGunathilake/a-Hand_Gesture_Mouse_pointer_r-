@@ -1,63 +1,61 @@
 # Hand Gesture Mouse Pointer
 
-This project allows you to control your mouse pointer using hand gestures, utilizing your computer's webcam. It is implemented in Python with the help of OpenCV, MediaPipe, and PyAutoGUI.
+A Python application that allows you to control your mouse pointer using hand gestures captured through your webcam. This project uses MediaPipe for hand tracking and PyAutoGUI for mouse control.
 
 ## Features
 
-- **Hand Detection:** Uses MediaPipe to detect hand landmarks in real-time.
-- **Mouse Control:** Move your mouse pointer by showing your hand to the webcam.
-- **Gesture Actions:**
-  - Move the index fingertip to move the mouse pointer.
-  - Use different hand labels (right/left) to trigger mouse actions (move/click).
+- Control mouse cursor movement with your index finger
+- Click functionality using pinch gesture
+- Smooth cursor movement
+- Real-time hand tracking
+- Visual feedback with hand landmarks
 
 ## Requirements
 
-- Python 3.x
-- [OpenCV](https://pypi.org/project/opencv-python/)
-- [MediaPipe](https://pypi.org/project/mediapipe/)
-- [PyAutoGUI](https://pypi.org/project/pyautogui/)
+- Python 3.7 or higher
+- Webcam
+- The following Python packages:
+  - OpenCV (opencv-python)
+  - MediaPipe
+  - PyAutoGUI
 
 ## Installation
 
-1. **Clone the repository:**
+1. Clone this repository:
+```bash
+git clone https://github.com/PasinduGunathilake/a-Hand_Gesture_Mouse_pointer_r-.git
+cd a-Hand_Gesture_Mouse_pointer_r-
+```
 
-   ```bash
-   git clone https://github.com/PasinduGunathilake/a-Hand_Gesture_Mouse_pointer_r-.git
-   cd a-Hand_Gesture_Mouse_pointer_r-
-   ```
-
-2. **Install Python dependencies:**
-
-   ```bash
-   pip install opencv-python mediapipe pyautogui
-   ```
+2. Install the required packages:
+```bash
+pip install -r requirements.txt
+```
 
 ## Usage
 
-1. **Run the script:**
+Run the main script:
+```bash
+python hand_gesture_mouse.py
+```
 
-   ```bash
-   python hgp.py
-   ```
+- Hold your hand in front of the webcam
+- Move your index finger to control the cursor
+- Pinch your thumb and index finger together to click
+- Press 'q' to quit the application
 
-2. **Control the Mouse:**
-   - Show your hand to the webcam.
-   - Moving your index finger (tip) will move the mouse pointer.
-   - If your right hand is detected, the pointer will move.
-   - If your left hand is detected, a mouse click will be triggered.
+## How it Works
 
-3. **Exit:**
-   - Press `x` on your keyboard to exit the application.
+The application uses MediaPipe's hand tracking solution to detect hand landmarks in real-time. It then maps the position of your index finger to screen coordinates and uses PyAutoGUI to control the mouse cursor.
 
-## Notes
+## License
 
-- Make sure your webcam is connected and accessible.
-- For best results, use the application in a well-lit environment.
+This project is open source and available under the MIT License.
 
+## Contributing
 
+Contributions, issues, and feature requests are welcome!
 
-## Acknowledgments
+## Author
 
-- [MediaPipe by Google](https://mediapipe.dev/)
-- [OpenCV](https://opencv.org/)
-- [PyAutoGUI](https://pyautogui.readthedocs.io/en/latest/)
+PasinduGunathilake
